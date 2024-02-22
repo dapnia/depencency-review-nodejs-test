@@ -19,7 +19,7 @@ app.use(morgan('combined'));
 app.get('/', (req, res) => {
     const message = lodash.capitalize('hello world');
     const time = moment().format('MMMM Do YYYY, h:mm:ss a');
-    res.send(`${message}! Current server time is ${time}.`);
+    res.send(`${message}! Current server time is ${time} !.`);
 });
 
 app.listen(3000, () => {
